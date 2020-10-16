@@ -206,6 +206,11 @@
       "deactivated": "Say has been Deactivated",
       "nomessage": "You have to put a message."
     },
+    "speak": {
+      "activated": "Speak has been Activated",
+      "deactivated": "Speak has been Deactivated",
+      "nomessage": "You have to put a message."
+    },
     "ping": {
       "activated": "Ping has been Activated",
       "deactivated": "Ping has been Deactivated",
@@ -235,6 +240,11 @@
       "uservoted": "Thanks for Voting. @{user}",
       "voteReseted": "The vote has stopped and the List was cleared!",
       "winner": "{name} with {votes} votes!"
+    },
+    "uptime": {
+      "activated": "Uptime has been Activated",
+      "deactivated": "Uptime has been Deactivated",
+      "error": "Currently the OBS plugin is not enabled. Please contact the bot owner to check into this."
     },
     "urbandictionary": {
       "activated": "Urbandictionary has been Activated",
