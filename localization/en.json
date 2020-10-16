@@ -206,6 +206,11 @@
       "deactivated": "Say has been Deactivated",
       "nomessage": "You have to put a message."
     },
+    "speak": {
+      "activated": "Speak has been Activated",
+      "deactivated": "Speak has been Deactivated",
+      "nomessage": "You have to put a message."
+    },
     "ping": {
       "activated": "Ping has been Activated",
       "deactivated": "Ping has been Deactivated",
