@@ -16,7 +16,7 @@ const JOINED = 5004;
 const SPELL = 5;
 
 //credits
-var users_credits = null;
+users_credits = null;
 var saveTimer = null;
 
 function updateCredits()
