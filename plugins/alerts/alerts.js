@@ -45,13 +45,14 @@ function append2File(fileName, data) {
 
 function obsToggle(scene, source, delay) {
   const obs = Bot.getService('obs-controller');
-  if (obsSetting.active) {
-    if (obs.output() !== null)
-      obs.toggleSource(scene, source);
-    setTimeout(function a() { obs.toggleSource(scene, source); }
-      , delay * 1000);
-  }
-
+  setTimeout( () => {
+    if (obsSetting.active) {
+      if (obs.output() !== null)
+        obs.toggleSource(scene, source);
+      setTimeout(function a() { obs.toggleSource(scene, source); }
+        , delay * 1000);
+    }
+  }, 1000);
 }
 function slobsToggle(source, delay) {
   const slobs = Bot.getService('slobs-controller').output();
@@ -101,10 +102,13 @@ module.exports = {
       var source = settings.alerts.follow.source;
       var delay = settings.alerts.follow.delay;
       var message = settings.alerts.follow.message;
-      var template = Handlebars.compile(message);
-      client.sendMessage(template({
-        user: data.user,
-      }));
+
+      if(!settings.alerts.follow.onlyObs){
+        var template = Handlebars.compile(message);
+        client.sendMessage(template({
+          user: data.user,
+        }));
+      }
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("follow", data.user, settings.alerts.follow.httpMessage);
@@ -119,10 +123,13 @@ module.exports = {
       var source = settings.alerts.sub.source;
       var delay = settings.alerts.sub.delay;
       var message = settings.alerts.sub.message;
-      var template = Handlebars.compile(message);
-      client.sendMessage(template({
-        user: data.user,
-      }));
+
+      if(!settings.alerts.sub.onlyObs){
+        var template = Handlebars.compile(message);
+        client.sendMessage(template({
+          user: data.user,
+        }));
+      }
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("sub", data.user, settings.alerts.sub.httpMessage);
@@ -139,10 +146,13 @@ module.exports = {
       var source = settings.alerts.joined.source;
       var delay = settings.alerts.joined.delay;
       var message = settings.alerts.joined.message;
-      var template = Handlebars.compile(message);
-      client.sendMessage(template({
-        user: data.user,
-      }));
+
+      if(!settings.alerts.joined.onlyObs){
+        var template = Handlebars.compile(message);
+        client.sendMessage(template({
+          user: data.user,
+        }));
+      }
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("joined", data.user, settings.alerts.joined.httpMessage);
@@ -163,7 +173,6 @@ module.exports = {
       if (settings.alerts.spell.seperateSpells) {
         if (spellSettings.spelltest) {
           var spellname = spellSettings.testspellName;
-          
           if (spellSettings.spells.hasOwnProperty(spellname)) {
             scene = spellSettings.spells[spellname].scene;
             source = spellSettings.spells[spellname].source;
@@ -179,12 +188,13 @@ module.exports = {
           }
         } else {
           var spellName = data['content'].name;
+          const settingsValue = spellSettings.spells[spellName];
           if (spellSettings.spells.hasOwnProperty(spellName)) {
-            scene = spellSettings.spells[spellName].scene;
-            source = spellSettings.spells[spellName].source;
-            delay = spellSettings.spells[spellName].delay;
-            message = spellSettings.spells[spellName].message;
-            httpMessage = spellSettings.spells[spellname].httpMessage;
+            scene = settingsValue.scene;
+            source = settingsValue.source;
+            delay = settingsValue.delay;
+            message = settingsValue.message;
+            httpMessage = settingsValue.httpMessage;
           } else {
             scene = settings.alerts.spell.scene;
             source = settings.alerts.spell.source;
@@ -200,10 +210,12 @@ module.exports = {
         message = settings.alerts.spell.message;
         httpMessage = settings.alerts.spell.httpMessage;
       }
-      var template = Handlebars.compile(message);
-      client.sendMessage(template({
-        user: data.user,
-      }));
+      if(!settings.alerts.spell.onlyObs){
+        var template = Handlebars.compile(message);
+        client.sendMessage(template({
+          user: data.user,
+        }));
+      }
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("spell", data.user, httpMessage);
