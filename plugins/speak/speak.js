@@ -10,7 +10,8 @@ module.exports = {
   author: "Made by Wasfun",
   license: "Apache-2.0",
   command: 'speak',
-  permissions: ['moderator', 'creator'],
+  permissions: [],
+  // permissions: ['moderator', 'creator'],
   cooldown: 10, // this is Set in Seconds, how long between the next usage of this command.
   execute(client, data) {
     const userCredits = users_credits[data.user];
