@@ -15,6 +15,23 @@ const SUBS = 5001;
 const JOINED = 5004;
 const SPELL = 5;
 
+//credits
+var users_credits = null;
+var saveTimer = null;
+
+function updateCredits()
+{
+  fs.writeFileSync(path.join(Bot.data, "users/users_credits.json"), JSON.stringify(users_credits, undefined, 4), (err) => {
+    Bot.log(err)
+    if (err) {
+        Bot.log(Bot.translate("processors.users.error_writing", {
+            fileName: 'users_credits.json',
+            error: err
+          }));
+    }
+  });
+}
+
 function write2File(fileName, data) {
   if (typeof (data) !== "string") {
     data = data.toString();
@@ -76,6 +93,19 @@ function https(_page, _user, _message) {
       message: _message
     });
   }
+}
+function giveCredits(data, credits){
+  if (users_credits[data.user] === undefined)
+    {
+      users_credits[data.user] = {
+        "credits": credits
+      }
+    }
+    else {
+      users_credits[data.user] = {
+        "credits": users_credits[data.user].credits + credits
+      }
+    }
 }
 
 module.exports = {
@@ -168,6 +198,7 @@ module.exports = {
       var delay = "";
       var message = "";
       var httpMessage = "";
+      var credits = 0;
 
       //If seperateSpells = true user will be able to use Alerts for each spell
       if (settings.alerts.spell.seperateSpells) {
@@ -179,12 +210,14 @@ module.exports = {
             delay = spellSettings.spells[spellname].delay;
             message = spellSettings.spells[spellname].message;
             httpMessage = spellSettings.spells[spellname].httpMessage;
+            credits = spellSettings.spells[spellname].credits | 1;
           } else {
             scene = settings.alerts.spell.scene;
             source = settings.alerts.spell.source;
             delay = settings.alerts.spell.delay;
             message = settings.alerts.spell.message;
             httpMessage = settings.alerts.spell.httpMessage;
+            credits = settings.alerts.spell.credits | 1;
           }
         } else {
           var spellName = data['content'].name;
@@ -195,12 +228,14 @@ module.exports = {
             delay = settingsValue.delay;
             message = settingsValue.message;
             httpMessage = settingsValue.httpMessage;
+            credits = spellSettings.spells[spellName].credits | 1;
           } else {
             scene = settings.alerts.spell.scene;
             source = settings.alerts.spell.source;
             delay = settings.alerts.spell.delay;
             message = settings.alerts.spell.message;
             httpMessage = settings.alerts.spell.httpMessage;
+            credits = settings.alerts.spell.credits | 1;
           }
         }
       } else {
@@ -209,6 +244,7 @@ module.exports = {
         delay = settings.alerts.spell.delay;
         message = settings.alerts.spell.message;
         httpMessage = settings.alerts.spell.httpMessage;
+        credits = settings.alerts.spell.credits | 1;
       }
       if(!settings.alerts.spell.onlyObs){
         var template = Handlebars.compile(message);
@@ -216,6 +252,7 @@ module.exports = {
           user: data.user,
         }));
       }
+      giveCredits(data, credits);
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("spell", data.user, httpMessage);
@@ -225,12 +262,16 @@ module.exports = {
     settings = require('./alerts.json');
     followCount = fs.readFileSync(path.join(Bot.root, 'labels', 'follow-count.txt')).toString();
     subCount = fs.readFileSync(path.join(Bot.root, 'labels', 'sub-count.txt')).toString();
+    users_credits = require(path.join(Bot.data, "users/users_credits.json"));
+    saveTimer = setInterval(updateCredits , 60000);
     Bot.log(Bot.translate("plugins.alerts.activated"));
   },
   deactivate() {
     settings = null;
     followCount = null;
     subCount = null;
+    users_credits = {};
+    clearInterval(saveTimer);
     Bot.log(Bot.translate("plugins.alerts.deactivated"))
   }
 };
