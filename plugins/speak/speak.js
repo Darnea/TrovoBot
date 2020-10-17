@@ -19,9 +19,13 @@ module.exports = {
       if (data.args[0] == 'stop') {
         say.stop();
       } else {
-        if (!!userCredits && (userCredits.credits | 0) > 3) {
+        if(data.badges == "creator" || data.badges == "moderator") {
           say.speak(data.args.join(' '), settings.voice, settings.speed);
-          users_credits[data.user].credits = userCredits.credits - 3;
+        } else if (!!userCredits && (userCredits.credits | 0) >= settings.price) {
+          say.speak(data.args.join(' '), settings.voice, settings.speed);
+          users_credits[data.user].credits = userCredits.credits - settings.price;
+        } else {
+          client.sendMessage("Not enough credits");
         }
       }
     }
