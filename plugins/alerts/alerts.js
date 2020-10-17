@@ -14,6 +14,10 @@ const FOLLOW = 5003;
 const SUBS = 5001;
 const JOINED = 5004;
 const SPELL = 5;
+const awaitTime = 5 * 1000;
+let last_sender = {
+  user: null
+};
 
 function write2File(fileName, data) {
   if (typeof (data) !== "string") {
@@ -150,6 +154,24 @@ module.exports = {
     else if ((data.chatType === SPELL ||
       (data.args !== undefined && data.args[0] === "spell" && settings.test))
       && settings.alerts.spell.active) {
+      
+      if (settings.alerts.spell.await && data.user === last_sender.user) {
+        const now = Date.now();
+        if (now - last_sender.time > awaitTime) {
+          last_sender = {
+            user: data.user,
+            time: Date.now()
+          }
+        } else {
+          return;
+        }
+      } else {
+        last_sender = {
+          user: data.user,
+          time: Date.now()
+        }
+      }
+
       Bot.log("activating");
       write2File("latest-spell.txt", data.user);
       const spellSettings = JSON.parse(fs.readFileSync(path.join(__dirname, 'spells.json'), "utf8"));
