@@ -176,6 +176,7 @@ module.exports = {
       var source = settings.alerts.joined.source;
       var delay = settings.alerts.joined.delay;
       var message = settings.alerts.joined.message;
+      var credits = settings.alerts.joined.credits;
 
       if(!settings.alerts.joined.onlyObs){
         var template = Handlebars.compile(message);
@@ -183,6 +184,7 @@ module.exports = {
           user: data.user,
         }));
       }
+      giveCredits(data, credits);
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("joined", data.user, settings.alerts.joined.httpMessage);

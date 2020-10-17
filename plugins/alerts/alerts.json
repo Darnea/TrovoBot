@@ -18,7 +18,8 @@
       "delay": 10,
       "message": "Thank you {{user}} for the Sub!",
       "httpMessage": "has subbed to the stream!",
-      "onlyObs": false
+      "onlyObs": false,
+      "credits": 500
     },
     "spell": {
       "active": true,
