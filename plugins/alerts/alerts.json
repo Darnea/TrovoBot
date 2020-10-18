@@ -16,7 +16,9 @@
       "source": "SUB",
       "delay": 10,
       "message": "Thank you @{{user}} :purpleheart for the Sub! :hype ",
-      "httpMessage": "has subbed to the stream!"
+      "httpMessage": "has subbed to the stream!",
+      "onlyObs": false,
+      "credits": 500
     },
     "spell": {
       "active": true,
@@ -25,7 +27,10 @@
       "source": "SPELL",
       "delay": 5,
       "message": "Gracias bebe @{{user}} :wink por el Mana! :chill ",
-      "httpMessage": "has cast a spell!"
+      "httpMessage": "has cast a spell!",
+      "await": true,
+      "onlyObs": false,
+      "credits": 5
     },
     "joined": {
       "active": true,
@@ -33,7 +38,17 @@
       "source": "JOINED",
       "delay": 10,
       "message": "Bienvenido @{{user}} :charm , espero disfrutes de la transmisión! :cat ",
-      "httpMessage": "has joined the stream!"
+      "httpMessage": "has joined the stream!",
+      "onlyObs": false
+    },
+    "raid": {
+      "active": true,
+      "scene": "-ALERTS-",
+      "source": "RAID",
+      "delay": 10,
+      "message": "Gracias @{{user}} por el raid!",
+      "httpMessage": "has raided the stream!",
+      "onlyObs": false
     }
   }
 }
