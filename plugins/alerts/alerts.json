@@ -30,7 +30,7 @@
       "httpMessage": "has cast a spell!",
       "await": true,
       "onlyObs": false,
-      "credits": 5
+      "credits": 1
     },
     "joined": {
       "active": true,
