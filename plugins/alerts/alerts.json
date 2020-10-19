@@ -7,7 +7,7 @@
       "scene": "-ALERTS-",
       "source": "FOLLOW",
       "delay": 10,
-      "message": "Thank you {{user}} for the Follow!",
+      "message": "Gracias @{{user}} por seguirme :smile , Bienvenido a la familia :evil !",
       "httpMessage": "has followed the stream!"
     },
     "sub": {
@@ -15,8 +15,10 @@
       "scene": "-ALERTS-",
       "source": "SUB",
       "delay": 10,
-      "message": "Thank you {{user}} for the Sub!",
-      "httpMessage": "has subbed to the stream!"
+      "message": "Thank you @{{user}} :purpleheart for the Sub! :hype ",
+      "httpMessage": "has subbed to the stream!",
+      "onlyObs": false,
+      "credits": 500
     },
     "spell": {
       "active": true,
@@ -24,24 +26,29 @@
       "scene": "-ALERTS-",
       "source": "SPELL",
       "delay": 5,
-      "message": "Thank you {{user}} for the Spells!",
-      "httpMessage": "has cast a spell!"
+      "message": "Gracias bebe @{{user}} :wink por el Mana! :chill ",
+      "httpMessage": "has cast a spell!",
+      "await": true,
+      "onlyObs": false,
+      "credits": 1
     },
     "joined": {
       "active": true,
       "scene": "-ALERTS-",
       "source": "JOINED",
       "delay": 10,
-      "message": "Welcome {{user}} , hope you enjoy the stream!",
-      "httpMessage": "has joined the stream!"
+      "message": "Bienvenido @{{user}} :charm , espero disfrutes de la transmisión! :cat ",
+      "httpMessage": "has joined the stream!",
+      "onlyObs": false
     },
     "raid": {
       "active": true,
       "scene": "-ALERTS-",
       "source": "RAID",
       "delay": 10,
-      "message": "Thanks {{user}} for the Raid!",
-      "httpMessage": "has raided the stream!"
+      "message": "Gracias @{{user}} por el raid!",
+      "httpMessage": "has raided the stream!",
+      "onlyObs": false
     }
   }
 }

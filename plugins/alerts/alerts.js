@@ -15,6 +15,27 @@ const SUBS = 5001;
 const JOINED = 5004;
 const RAID = 5008;
 const SPELL = 5;
+const awaitTime = 5 * 1000;
+let last_sender = {
+  user: null
+};
+
+//credits
+users_credits = null;
+var saveTimer = null;
+
+function updateCredits()
+{
+  fs.writeFileSync(path.join(Bot.data, "users/users_credits.json"), JSON.stringify(users_credits, undefined, 4), (err) => {
+    Bot.log(err)
+    if (err) {
+        Bot.log(Bot.translate("processors.users.error_writing", {
+            fileName: 'users_credits.json',
+            error: err
+          }));
+    }
+  });
+}
 
 function write2File(fileName, data) {
   if (typeof (data) !== "string") {
@@ -46,13 +67,14 @@ function append2File(fileName, data) {
 
 function obsToggle(scene, source, delay) {
   const obs = Bot.getService('obs-controller');
-  if (obsSetting.active) {
-    if (obs.output() !== null)
-      obs.toggleSource(scene, source);
-    setTimeout(function a() { obs.toggleSource(scene, source); }
-      , delay * 1000);
-  }
-
+  setTimeout( () => {
+    if (obsSetting.active) {
+      if (obs.output() !== null)
+        obs.toggleSource(scene, source);
+      setTimeout(function a() { obs.toggleSource(scene, source); }
+        , delay * 1000);
+    }
+  }, 1000);
 }
 function slobsToggle(source, delay) {
   const slobs = Bot.getService('slobs-controller').output();
@@ -76,6 +98,19 @@ function https(_page, _user, _message) {
       message: _message
     });
   }
+}
+function giveCredits(data, creditsToAdd = 1){
+  if (users_credits[data.user] === undefined)
+    {
+      users_credits[data.user] = {
+        "credits": creditsToAdd
+      }
+    }
+    else {
+      users_credits[data.user] = {
+        "credits": users_credits[data.user].credits + creditsToAdd
+      }
+    }
 }
 
 module.exports = {
@@ -102,10 +137,13 @@ module.exports = {
       var source = settings.alerts.follow.source;
       var delay = settings.alerts.follow.delay;
       var message = settings.alerts.follow.message;
-      var template = Handlebars.compile(message);
-      client.sendMessage(template({
-        user: data.user,
-      }));
+
+      if(!settings.alerts.follow.onlyObs){
+        var template = Handlebars.compile(message);
+        client.sendMessage(template({
+          user: data.user,
+        }));
+      }
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("follow", data.user, settings.alerts.follow.httpMessage);
@@ -120,10 +158,15 @@ module.exports = {
       var source = settings.alerts.sub.source;
       var delay = settings.alerts.sub.delay;
       var message = settings.alerts.sub.message;
-      var template = Handlebars.compile(message);
-      client.sendMessage(template({
-        user: data.user,
-      }));
+      var credits = settings.alerts.sub.credits;
+
+      if(!settings.alerts.sub.onlyObs){
+        var template = Handlebars.compile(message);
+        client.sendMessage(template({
+          user: data.user,
+        }));
+      }
+      giveCredits(data, credits);
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("sub", data.user, settings.alerts.sub.httpMessage);
@@ -156,10 +199,14 @@ module.exports = {
       var source = settings.alerts.joined.source;
       var delay = settings.alerts.joined.delay;
       var message = settings.alerts.joined.message;
-      var template = Handlebars.compile(message);
-      client.sendMessage(template({
-        user: data.user,
-      }));
+      var credits = settings.alerts.joined.credits;
+
+      if(!settings.alerts.joined.onlyObs){
+        var template = Handlebars.compile(message);
+        client.sendMessage(template({
+          user: data.user,
+        }));
+      }
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("joined", data.user, settings.alerts.joined.httpMessage);
@@ -167,6 +214,24 @@ module.exports = {
     else if ((data.chatType === SPELL ||
       (data.args !== undefined && data.args[0] === "spell" && settings.test))
       && settings.alerts.spell.active) {
+      
+      if (settings.alerts.spell.await && data.user === last_sender.user) {
+        const now = Date.now();
+        if (now - last_sender.time > awaitTime) {
+          last_sender = {
+            user: data.user,
+            time: Date.now()
+          }
+        } else {
+          return;
+        }
+      } else {
+        last_sender = {
+          user: data.user,
+          time: Date.now()
+        }
+      }
+
       Bot.log("activating");
       write2File("latest-spell.txt", data.user);
       const spellSettings = JSON.parse(fs.readFileSync(path.join(__dirname, 'spells.json'), "utf8"));
@@ -175,39 +240,44 @@ module.exports = {
       var delay = "";
       var message = "";
       var httpMessage = "";
+      var credits = 0;
 
       //If seperateSpells = true user will be able to use Alerts for each spell
       if (settings.alerts.spell.seperateSpells) {
         if (spellSettings.spelltest) {
           var spellname = spellSettings.testspellName;
-          
           if (spellSettings.spells.hasOwnProperty(spellname)) {
             scene = spellSettings.spells[spellname].scene;
             source = spellSettings.spells[spellname].source;
             delay = spellSettings.spells[spellname].delay;
             message = spellSettings.spells[spellname].message;
             httpMessage = spellSettings.spells[spellname].httpMessage;
+            credits = spellSettings.spells[spellname].credits | 1;
           } else {
             scene = settings.alerts.spell.scene;
             source = settings.alerts.spell.source;
             delay = settings.alerts.spell.delay;
             message = settings.alerts.spell.message;
             httpMessage = settings.alerts.spell.httpMessage;
+            credits = settings.alerts.spell.credits | 1;
           }
         } else {
           var spellName = data['content'].name;
+          const settingsValue = spellSettings.spells[spellName];
           if (spellSettings.spells.hasOwnProperty(spellName)) {
-            scene = spellSettings.spells[spellName].scene;
-            source = spellSettings.spells[spellName].source;
-            delay = spellSettings.spells[spellName].delay;
-            message = spellSettings.spells[spellName].message;
-            httpMessage = spellSettings.spells[spellname].httpMessage;
+            scene = settingsValue.scene;
+            source = settingsValue.source;
+            delay = settingsValue.delay;
+            message = settingsValue.message;
+            httpMessage = settingsValue.httpMessage;
+            credits = spellSettings.spells[spellName].credits | 1;
           } else {
             scene = settings.alerts.spell.scene;
             source = settings.alerts.spell.source;
             delay = settings.alerts.spell.delay;
             message = settings.alerts.spell.message;
             httpMessage = settings.alerts.spell.httpMessage;
+            credits = settings.alerts.spell.credits | 1;
           }
         }
       } else {
@@ -216,11 +286,15 @@ module.exports = {
         delay = settings.alerts.spell.delay;
         message = settings.alerts.spell.message;
         httpMessage = settings.alerts.spell.httpMessage;
+        credits = settings.alerts.spell.credits | 1;
       }
-      var template = Handlebars.compile(message);
-      client.sendMessage(template({
-        user: data.user,
-      }));
+      if(!settings.alerts.spell.onlyObs){
+        var template = Handlebars.compile(message);
+        client.sendMessage(template({
+          user: data.user,
+        }));
+      }
+      giveCredits(data, credits);
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("spell", data.user, httpMessage);
@@ -230,12 +304,16 @@ module.exports = {
     settings = require('./alerts.json');
     followCount = fs.readFileSync(path.join(Bot.root, 'labels', 'follow-count.txt')).toString();
     subCount = fs.readFileSync(path.join(Bot.root, 'labels', 'sub-count.txt')).toString();
+    users_credits = require(path.join(Bot.data, "users/users_credits.json"));
+    saveTimer = setInterval(updateCredits , 60000);
     Bot.log(Bot.translate("plugins.alerts.activated"));
   },
   deactivate() {
     settings = null;
     followCount = null;
     subCount = null;
+    users_credits = {};
+    clearInterval(saveTimer);
     Bot.log(Bot.translate("plugins.alerts.deactivated"))
   }
 };
