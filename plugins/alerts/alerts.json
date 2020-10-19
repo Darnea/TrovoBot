@@ -41,7 +41,7 @@
       "source": "RAID",
       "delay": 10,
       "message": "Thanks {{user}} for the Raid!",
-      "httpMessage": "has raided the stream!",
+      "httpMessage": "has raided the stream!"
     }
   }
 }
