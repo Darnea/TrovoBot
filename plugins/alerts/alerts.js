@@ -94,16 +94,16 @@ function https(_page, _user, _message) {
     });
   }
 }
-function giveCredits(data, credits){
+function giveCredits(data, creditsToAdd = 1){
   if (users_credits[data.user] === undefined)
     {
       users_credits[data.user] = {
-        "credits": credits
+        "credits": creditsToAdd
       }
     }
     else {
       users_credits[data.user] = {
-        "credits": users_credits[data.user].credits + credits
+        "credits": users_credits[data.user].credits + creditsToAdd
       }
     }
 }
@@ -153,6 +153,7 @@ module.exports = {
       var source = settings.alerts.sub.source;
       var delay = settings.alerts.sub.delay;
       var message = settings.alerts.sub.message;
+      var credits = settings.alerts.sub.credits;
 
       if(!settings.alerts.sub.onlyObs){
         var template = Handlebars.compile(message);
@@ -160,6 +161,7 @@ module.exports = {
           user: data.user,
         }));
       }
+      giveCredits(data, credits);
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("sub", data.user, settings.alerts.sub.httpMessage);
@@ -184,7 +186,6 @@ module.exports = {
           user: data.user,
         }));
       }
-      giveCredits(data, credits);
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("joined", data.user, settings.alerts.joined.httpMessage);

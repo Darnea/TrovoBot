@@ -30,7 +30,7 @@
       "message": "Thank you {{user}} for the Spells!",
       "httpMessage": "has cast a spell!",
       "onlyObs": false,
-      "credits": 5
+      "credits": 1
     },
     "joined": {
       "active": true,
