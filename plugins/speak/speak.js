@@ -19,7 +19,7 @@ module.exports = {
       if (data.args[0] == 'stop') {
         say.stop();
       } else {
-        const hasPermission = data.badges.indexOf("creator") > -1 || data.badges.indexOf("moderator") > -1;
+        const hasPermission = data.badges && (data.badges.indexOf("creator") > -1 || data.badges.indexOf("moderator") > -1);
         if(hasPermission) {
           say.speak(data.args.join(' '), settings.voice, settings.speed);
         } else if (!!userCredits && (userCredits.credits | 0) >= settings.price) {
