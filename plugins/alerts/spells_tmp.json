@@ -1,0 +1,112 @@
+{
+    "spelltest": false,
+    "testspellName": "On Fire",
+    "spells": {
+        "On Fire": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 5
+        },
+        "Stay Safe": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 1
+        },
+        "Rose": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 5
+        },
+        "HYPE": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 10
+        },
+        "Bravo!": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 50
+        },
+        "Cake": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 30
+        },
+        "Winner": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 100
+        },
+        "Shiny Unicorn": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 500
+        },
+        "GGWP": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 1500
+        },
+        "Cash Bang": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 1000
+        },
+        "EZ": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 300
+        },
+        "Top1": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 2000
+        },
+        "Fam Star": {
+            "scene": "-ALERTS-",
+            "source": "SPELL",
+            "delay": 5,
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "httpMessage": "has cast a spell!",
+            "credits": 50
+        }
+        
+    }
+
+}
