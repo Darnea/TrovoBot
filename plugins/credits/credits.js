@@ -14,7 +14,11 @@ module.exports = {
     credits: `Made by Wasfun`, // MAKE SURE YOU FILL THIS IN GOD DAMNIT!
     execute(client, data) {
         const userCredits = users_credits[data.user];
-        client.sendMessage(`@${data.user} has ${!!userCredits ? userCredits.credits : 0 } credits`);
+        if (!!userCredits && userCredits.credits) {
+            client.sendMessage(`@${data.user} has ${userCredits.credits} credits`);
+        } else {
+            client.sendMessage(`@${data.user} doesn´t have any credits`);
+        }
     },
     activate() {
         Bot.log(Bot.translate("plugins.credit.activated"))
