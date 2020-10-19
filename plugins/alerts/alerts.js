@@ -174,6 +174,7 @@ module.exports = {
     else if ((data.chatType === RAID ||
       (data.args !== undefined && data.args[0] === "raid" && settings.test)) &&
       settings.alerts.raid.active) {
+      write2File("latest-raid.txt", data.user);
       var scene = settings.alerts.raid.scene;
       var source = settings.alerts.raid.source;
       var delay = settings.alerts.raid.delay;
