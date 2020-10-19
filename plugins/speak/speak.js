@@ -19,7 +19,8 @@ module.exports = {
       if (data.args[0] == 'stop') {
         say.stop();
       } else {
-        if(data.badges == "creator" || data.badges == "moderator") {
+        const hasPermission = data.badges.indexOf("creator") > -1 || data.badges.indexOf("moderator") > -1;
+        if(hasPermission) {
           say.speak(data.args.join(' '), settings.voice, settings.speed);
         } else if (!!userCredits && (userCredits.credits | 0) >= settings.price) {
           say.speak(data.args.join(' '), settings.voice, settings.speed);
