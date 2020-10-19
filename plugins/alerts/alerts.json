@@ -16,7 +16,8 @@
       "source": "SUB",
       "delay": 10,
       "message": "Thank you {{user}} for the Sub!",
-      "httpMessage": "has subbed to the stream!"
+      "httpMessage": "has subbed to the stream!",
+      "credits": 500
     },
     "spell": {
       "active": true,
@@ -26,7 +27,7 @@
       "delay": 5,
       "message": "Thank you {{user}} for the Spells!",
       "httpMessage": "has cast a spell!",
-      "credits": 5
+      "credits": 1
     },
     "joined": {
       "active": true,
