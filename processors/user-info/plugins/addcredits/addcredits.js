@@ -5,7 +5,7 @@ var settings = require('./addcredits.json');
 module.exports = {
   name: 'addcredits', // Name of the Plugin
   description: "Returns how many points a user has",
-  author: "Krammy",
+  author: "Wasfun",
   license: "Apache-2.0",
   command: 'addcredits', // This is the Command that is typed into Chat!
   permission: ["creator", "moderator"], // This is for Permissisons depending on the Platform.
