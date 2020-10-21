@@ -1,5 +1,2 @@
-message1
-message2
-message3
-message4
-message5
+!speak Bienvenidos al stream
+!redes
