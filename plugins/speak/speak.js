@@ -22,9 +22,11 @@ module.exports = {
         const hasPermission = data.badges && (data.badges.indexOf("creator") > -1 || data.badges.indexOf("moderator") > -1);
         if(hasPermission) {
           say.speak(data.args.join(' '), settings.voice, settings.speed);
+          users_credits[data.user].usage = (users_credits[data.user].usage || 0) + 1;
         } else if (!!userCredits && (userCredits.credits | 0) >= settings.price) {
           say.speak(data.args.join(' '), settings.voice, settings.speed);
           users_credits[data.user].credits = userCredits.credits - settings.price;
+          users_credits[data.user].usage = (users_credits[data.user].usage || 0) + 1;
         } else {
           client.sendMessage("Not enough credits");
         }
