@@ -6,7 +6,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill ",
             "httpMessage": "has cast a spell!",
             "credits": 5
         },
@@ -14,7 +14,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill ",
             "httpMessage": "has cast a spell!",
             "credits": 1
         },
@@ -22,7 +22,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey  @{{user}} :wink por la rosa :flower ",
             "httpMessage": "has cast a spell!",
             "credits": 5
         },
@@ -30,7 +30,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el HYPE :hype :hype  ",
             "httpMessage": "has cast a spell!",
             "credits": 10
         },
@@ -38,7 +38,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el elixir :clap :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
             "credits": 50
         },
@@ -46,7 +46,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el pastel :cake :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
             "credits": 30
         },
@@ -54,7 +54,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el elixir :no.1 :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
             "credits": 100
         },
@@ -62,7 +62,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el Ponny :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
             "credits": 500
         },
@@ -70,7 +70,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el :gg :w :p :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
             "credits": 1500
         },
@@ -78,7 +78,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el elixir :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
             "credits": 1000
         },
@@ -86,7 +86,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el elixir :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
             "credits": 300
         },
@@ -94,7 +94,7 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el Top01 :no.1 :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
             "credits": 2000
         },
@@ -102,9 +102,9 @@
             "scene": "-ALERTS-",
             "source": "SPELL",
             "delay": 5,
-            "message": "Gracias bebe @{{user}} :wink por el Mana! :chill",
+            "message": "Gracias mi rey @{{user}} :wink por el elixir :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
-            "credits": 50
+            "credits": 10
         }
         
     }

@@ -15,7 +15,7 @@ const SUBS = 5001;
 const JOINED = 5004;
 const RAID = 5008;
 const SPELL = 5;
-const awaitTime = 5 * 1000;
+const awaitTime = 15 * 1000;
 let last_sender = {
   user: null
 };
@@ -234,7 +234,7 @@ module.exports = {
 
       Bot.log("activating");
       write2File("latest-spell.txt", data.user);
-      const spellSettings = JSON.parse(fs.readFileSync(path.join(__dirname, 'spells.json'), "utf8"));
+      const spellSettings = JSON.parse(fs.readFileSync(path.join(__dirname, 'spells_tmp.json'), "utf8"));
       var scene = "";
       var source = "";
       var delay = "";

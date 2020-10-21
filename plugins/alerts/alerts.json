@@ -14,7 +14,7 @@
       "active": true,
       "scene": "-ALERTS-",
       "source": "SUB",
-      "delay": 10,
+      "delay": 25,
       "message": "Thank you @{{user}} :purpleheart for the Sub! :hype ",
       "httpMessage": "has subbed to the stream!",
       "onlyObs": false,
