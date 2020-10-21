@@ -60,6 +60,7 @@ module.exports = {
         "blackjackHand": [],
         "blackjackDealerHand": [],
         "blackjackBet": 0,
+        "iconURL": data.iconURL
       }
     }
     else
@@ -84,6 +85,7 @@ module.exports = {
         "blackjackHand": users[data.user].blackjackHand,
         "blackjackDealerHand": users[data.user].blackjackDealerHand,
         "blackjackBet": users[data.user].blackjackBet,
+        "iconURL": (users[data.user].iconURL || data.iconURL)
       }
     }
     
