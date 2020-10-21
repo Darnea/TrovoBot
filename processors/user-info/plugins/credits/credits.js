@@ -1,6 +1,6 @@
 const Handlebars = require('handlebars');
-const Bot = require('../../modules/Bot.js');
-const alerts = require('../alerts/alerts.js');
+const Bot = require('../../../../modules/Bot.js');
+// const alerts = require('../alerts/alerts.js');
 
 module.exports = {
     name: 'credits',
@@ -21,9 +21,9 @@ module.exports = {
         }
     },
     activate() {
-        Bot.log(Bot.translate("plugins.credit.activated"))
+        Bot.log(Bot.translate("processors.user_info.plugins.credits.activated"))
     },
     deactivate() {
-        Bot.log(Bot.translate("plugins.credit.deactivated"))
+        Bot.log(Bot.translate("processors.user_info.plugins.credits.deactivated"))
     }
 };

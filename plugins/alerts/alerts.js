@@ -103,12 +103,14 @@ function giveCredits(data, creditsToAdd = 1){
   if (users_credits[data.user] === undefined)
     {
       users_credits[data.user] = {
-        "credits": creditsToAdd
+        "credits": creditsToAdd,
+        "usage": 0
       }
     }
     else {
       users_credits[data.user] = {
-        "credits": users_credits[data.user].credits + creditsToAdd
+        "credits": users_credits[data.user].credits + creditsToAdd,
+        "usage": (users_credits[data.user].usage || 0)
       }
     }
 }
