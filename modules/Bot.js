@@ -1160,13 +1160,13 @@ Bot.prototype.defaultFallbackLocalization = () => {
           "adding":
           {
             "error_user": "Please @ a user to give them points. ex: !add @user 1000",
-            "success": "{user} has added {ammount} points to {receiver} balance. They now have: {points} points",
+            "success": "{user} has added {amount} points to {receiver} balance. They now have: {points} points",
             "activated": "Add Plugin activated",
             "deactivated": "Add Plugin deactivated"
           },
           "give":
           {
-            "success": "{user} has given {ammount} points to {receiver}",
+            "success": "{user} has given {amount} points to {receiver}",
             "insufficient_funds": "{user} you do not have enough points to give away. Please do !points to see your current points.",
             "negative": "You cannot give a user negative points.",
             "error_user": "Please @ a user to give them points. ex: !give @user 1000",

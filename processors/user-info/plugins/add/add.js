@@ -23,7 +23,7 @@ module.exports = {
                 {
                   user: data.user,
                   receiver: data.args[0],
-                  ammount: data.args[1],
+                  amount: data.args[1],
                   points: userInfo[data.args[0].substr(1)].points
                 }));
                 Bot.log(userInfo);
