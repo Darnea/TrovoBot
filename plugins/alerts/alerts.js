@@ -216,24 +216,6 @@ module.exports = {
     else if ((data.chatType === SPELL ||
       (data.args !== undefined && data.args[0] === "spell" && settings.test))
       && settings.alerts.spell.active) {
-      
-      if (settings.alerts.spell.await && data.user === last_sender.user) {
-        const now = Date.now();
-        if (now - last_sender.time > awaitTime) {
-          last_sender = {
-            user: data.user,
-            time: Date.now()
-          }
-        } else {
-          return;
-        }
-      } else {
-        last_sender = {
-          user: data.user,
-          time: Date.now()
-        }
-      }
-
       Bot.log("activating");
       write2File("latest-spell.txt", data.user);
       const spellSettings = JSON.parse(fs.readFileSync(path.join(__dirname, 'spells_tmp.json'), "utf8"));
@@ -290,13 +272,29 @@ module.exports = {
         httpMessage = settings.alerts.spell.httpMessage;
         credits = settings.alerts.spell.credits | 1;
       }
+      giveCredits(data, credits);
+      if (settings.alerts.spell.await && data.user === last_sender.user) {
+        const now = Date.now();
+        if (now - last_sender.time > awaitTime) {
+          last_sender = {
+            user: data.user,
+            time: Date.now()
+          }
+        } else {
+          return;
+        }
+      } else {
+        last_sender = {
+          user: data.user,
+          time: Date.now()
+        }
+      }
       if(!settings.alerts.spell.onlyObs){
         var template = Handlebars.compile(message);
         client.sendMessage(template({
           user: data.user,
         }));
       }
-      giveCredits(data, credits);
       obsToggle(scene, source, delay);
       slobsToggle(source, delay);
       https("spell", data.user, httpMessage);

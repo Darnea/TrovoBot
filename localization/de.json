@@ -49,7 +49,7 @@
 				"activated":"Add Plug-in wurde aktiviert",
 				"deactivated":"Add Plug-in wurde deaktiviert",
 				"error_user":"Bitte gib einen Benutzer an dem du die Punkte geben willst. Beispiel: !add @user 1000 hinzufügen",
-				"success":"{user} hat {ammount} Punkte {receiver} hinzugefügt. Du hast nun {points} Punkte"
+				"success":"{user} hat {amount} Punkte {receiver} hinzugefügt. Du hast nun {points} Punkte"
 			 },
 			 "give":{
 				"activated":"Give Plug-in wurde aktiviert",
@@ -57,7 +57,7 @@
 				"error_user":"Bitte gib einen Benutzer an dem du die Punkte geben willst. Beispiel: !give @user 1000",
 				"insufficient_funds":"{user} Sie haben nicht genügend Punkte, um sie zu verschenken. Bitte tun! Punkte, um Ihre aktuellen Punkte zu sehen.",
 				"negative":"Du kannst keinem Beuntzer Minuspunkte geben",
-				"success":"{user} hat {ammount} Punkte für {receiver} abgegeben"
+				"success":"{user} hat {amount} Punkte für {receiver} abgegeben"
 			 },
 			 "level":{
 				"activated":"Level Plug-in wurde aktiviert",
