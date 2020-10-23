@@ -22,7 +22,7 @@ module.exports = {
                 {
                 user: data.user,
                 receiver: data.args[0],
-                ammount: data.args[1]
+                amount: data.args[1]
                 }));
             }
             else if (parseInt(data.args[1]) < 1)
