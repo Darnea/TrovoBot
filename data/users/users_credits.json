@@ -9,7 +9,8 @@
         "credits": 0
     },
     "Wasfun": {
-        "credits": 657
+        "credits": 668,
+        "usage": 4
     },
     "Darneo": {
         "credits": 1000
@@ -33,13 +34,15 @@
         "credits": 31
     },
     "Darnea": {
-        "credits": 281
+        "credits": 286,
+        "usage": 1
     },
     "HoOkii": {
         "credits": 3
     },
     "Mush4sh_1": {
-        "credits": 641
+        "credits": 642,
+        "usage": 1
     },
     "EdynD": {
         "credits": 11
@@ -60,37 +63,47 @@
         "credits": 100
     },
     "ZanyAce": {
-        "credits": 89
+        "credits": 95,
+        "usage": 6
     },
     "Noxius": {
-        "credits": 50
+        "credits": 55,
+        "usage": 0
     },
     "ZeyNear": {
-        "credits": 25
+        "credits": 50,
+        "usage": 0
     },
     "Stick001": {
-        "credits": 25
+        "credits": 25,
+        "usage": 1
     },
     "JesusPF": {
-        "credits": 5
+        "credits": 11,
+        "usage": 0
     },
     "Jhaneth": {
-        "credits": 25
+        "credits": 30,
+        "usage": 0
     },
     "Chupetina": {
-        "credits": 8
+        "credits": 14,
+        "usage": 0
     },
     "Perit4": {
-        "credits": 25
+        "credits": 30,
+        "usage": 0
     },
     "Dr0x": {
-        "credits": 25
+        "credits": 35,
+        "usage": 0
     },
     "GRUMO77": {
         "credits": 49
     },
     "nikzer0": {
-        "credits": 3
+        "credits": 19,
+        "usage": 2
     },
     "bebematador": {
         "credits": 25
@@ -99,13 +112,15 @@
         "credits": 1
     },
     "weoxs1": {
-        "credits": 2
+        "credits": 9,
+        "usage": 0
     },
     "hardgorealice": {
         "credits": 1
     },
     "PipilinChueco": {
-        "credits": 18
+        "credits": 23,
+        "usage": 0
     },
     "hefesss": {
         "credits": 0
@@ -117,7 +132,8 @@
         "credits": 27
     },
     "lzezel": {
-        "credits": 8
+        "credits": 5,
+        "usage": 1
     },
     "HaiseLR0": {
         "credits": 1
@@ -136,7 +152,8 @@
         "credits": 10
     },
     "Thetony89": {
-        "credits": 21
+        "credits": 27,
+        "usage": 0
     },
     "xxthezhurxx123": {
         "credits": 5
@@ -259,7 +276,8 @@
         "credits": 0
     },
     "MilitaryMann": {
-        "credits": 0
+        "credits": 5,
+        "usage": 0
     },
     "Mavamark": {
         "credits": 0
@@ -749,5 +767,9 @@
     },
     "Darneito": {
         "credits": 6
+    },
+    "VodkaScc": {
+        "credits": 500,
+        "usage": 0
     }
 }
