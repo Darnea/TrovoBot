@@ -9,13 +9,15 @@
         "credits": 0
     },
     "Wasfun": {
-        "credits": 655
+        "credits": 698,
+        "usage": 113
     },
     "Darneo": {
         "credits": 1000
     },
     "sti89": {
-        "credits": 26
+        "credits": 27,
+        "usage": 0
     },
     "FullTrovlox": {
         "credits": 4
@@ -30,67 +32,82 @@
         "credits": 1
     },
     "wES123": {
-        "credits": 20
+        "credits": 31
     },
     "Darnea": {
-        "credits": 276
+        "credits": 302,
+        "usage": 2
     },
     "HoOkii": {
         "credits": 3
     },
     "Mush4sh_1": {
-        "credits": 636
+        "credits": 662,
+        "usage": 34
     },
     "EdynD": {
         "credits": 11
     },
     "mousedebolitaa": {
-        "credits": 11
+        "credits": 26,
+        "usage": 0
     },
     "dragon54xx": {
         "credits": 1
     },
     "gomiwi": {
-        "credits": 25
+        "credits": 26
     },
     "LeandroLG": {
         "credits": 27
     },
     "MercyMallquiTurbo": {
-        "credits": 100
+        "credits": 95,
+        "usage": 1
     },
     "ZanyAce": {
-        "credits": 80
+        "credits": 105,
+        "usage": 32
     },
     "Noxius": {
-        "credits": 50
+        "credits": 55,
+        "usage": 0
     },
     "ZeyNear": {
-        "credits": 25
+        "credits": 60,
+        "usage": 0
     },
     "Stick001": {
-        "credits": 25
+        "credits": 35,
+        "usage": 1
     },
     "JesusPF": {
-        "credits": 5
+        "credits": 20,
+        "usage": 0
     },
     "Jhaneth": {
-        "credits": 25
+        "credits": 30,
+        "usage": 0
     },
     "Chupetina": {
-        "credits": 8
+        "credits": 14,
+        "usage": 0
     },
     "Perit4": {
-        "credits": 25
+        "credits": 30,
+        "usage": 0
     },
     "Dr0x": {
-        "credits": 25
+        "credits": 35,
+        "usage": 0
     },
     "GRUMO77": {
-        "credits": 49
+        "credits": 54,
+        "usage": 0
     },
     "nikzer0": {
-        "credits": 3
+        "credits": 15,
+        "usage": 9
     },
     "bebematador": {
         "credits": 25
@@ -99,13 +116,16 @@
         "credits": 1
     },
     "weoxs1": {
-        "credits": 2
+        "credits": 15,
+        "usage": 0
     },
     "hardgorealice": {
-        "credits": 1
+        "credits": 7,
+        "usage": 0
     },
     "PipilinChueco": {
-        "credits": 8
+        "credits": 25,
+        "usage": 1
     },
     "hefesss": {
         "credits": 0
@@ -114,10 +134,12 @@
         "credits": 2
     },
     "M4tt": {
-        "credits": 25
+        "credits": 29,
+        "usage": 0
     },
     "lzezel": {
-        "credits": 8
+        "credits": 9,
+        "usage": 1
     },
     "HaiseLR0": {
         "credits": 1
@@ -136,7 +158,8 @@
         "credits": 10
     },
     "Thetony89": {
-        "credits": 16
+        "credits": 33,
+        "usage": 0
     },
     "xxthezhurxx123": {
         "credits": 5
@@ -169,7 +192,8 @@
         "credits": 0
     },
     "shamelessDoto": {
-        "credits": 0
+        "credits": 104,
+        "usage": 0
     },
     "BuenBarbas": {
         "credits": 0
@@ -187,13 +211,13 @@
         "credits": 0
     },
     "Backsito": {
-        "credits": 23
+        "credits": 28
     },
     "juan234": {
         "credits": 0
     },
     "josearies23": {
-        "credits": 14
+        "credits": 9
     },
     "PingaOne": {
         "credits": 25
@@ -226,7 +250,7 @@
         "credits": 0
     },
     "Skins_": {
-        "credits": 9
+        "credits": 11
     },
     "ZodiacKiller": {
         "credits": 0
@@ -259,7 +283,8 @@
         "credits": 0
     },
     "MilitaryMann": {
-        "credits": 0
+        "credits": 5,
+        "usage": 0
     },
     "Mavamark": {
         "credits": 0
@@ -307,13 +332,14 @@
         "credits": 20
     },
     "Zain_1992": {
-        "credits": 0
+        "credits": 1,
+        "usage": 5
     },
     "Menm4a": {
         "credits": 0
     },
     "FatallFury": {
-        "credits": 10
+        "credits": 13
     },
     "Diiegouwu": {
         "credits": 0
@@ -421,7 +447,8 @@
         "credits": 0
     },
     "dietoo": {
-        "credits": 500
+        "credits": 495,
+        "usage": 1
     },
     "Anime13": {
         "credits": 0
@@ -469,7 +496,7 @@
         "credits": 0
     },
     "paltito": {
-        "credits": 11
+        "credits": 12
     },
     "hinoko": {
         "credits": 31
@@ -694,7 +721,14 @@
         "credits": 89
     },
     "billsdoto": {
-        "credits": 10
+        "credits": 10,
+        "usage": 7,
+        "history": [
+            {
+                "user": "@billsdoto",
+                "amount": "25"
+            }
+        ]
     },
     "freddy322": {
         "credits": 1
@@ -731,5 +765,76 @@
     },
     "TheDrag": {
         "credits": 6
+    },
+    "Willie_Reed": {
+        "credits": 10
+    },
+    "LOVG": {
+        "credits": 6
+    },
+    "_perita": {
+        "credits": 11
+    },
+    "Calizkan": {
+        "credits": 6
+    },
+    "Frunadula": {
+        "credits": 11
+    },
+    "Darneito": {
+        "credits": 6
+    },
+    "VodkaScc": {
+        "credits": 1987,
+        "usage": 3
+    },
+    "Quesokios": {
+        "credits": 1,
+        "usage": 0
+    },
+    "By_AcAvAnE": {
+        "credits": 10,
+        "usage": 0
+    },
+    "CuñadoDeMaria": {
+        "credits": 6,
+        "usage": 0
+    },
+    "TeAmoDarnea": {
+        "credits": 15,
+        "usage": 0
+    },
+    "VitaOn": {
+        "credits": 13,
+        "usage": 0
+    },
+    "MyLifee": {
+        "credits": 12,
+        "usage": 0
+    },
+    "AgriDulce": {
+        "credits": 5,
+        "usage": 0
+    },
+    "elsalvador": {
+        "credits": 6,
+        "usage": 0
+    },
+    "Fernando2004": {
+        "credits": 1,
+        "usage": 0
+    },
+    "payasitochupagampi": {
+        "credits": 1,
+        "usage": 0
+    },
+    "wardenclyffe": {
+        "credits": "20",
+        "history": [
+            {
+                "user": "@wardenclyffe",
+                "amount": "20"
+            }
+        ]
     }
 }

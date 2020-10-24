@@ -17,9 +17,9 @@ module.exports = {
     if (hasPermission && data.args.length > 0 && data.args[0].charAt(0) == '@' && data.user != data.args[0].substr(1)) {
       if (data.args[1] !== undefined && !isNaN(data.args[1])) {
         if (parseInt(data.args[1]) > 0 && data.args[1] <= settings.maxCredits) {
-          if(!!users_credits[data.args[0].substr(1)]){
+          if (!!users_credits[data.args[0].substr(1)]) {
             users_credits[data.args[0].substr(1)].credits = parseInt(users_credits[data.args[0].substr(1)].credits) + parseInt(data.args[1]);
-          
+
             client.sendMessage(Bot.translate("processors.user_info.plugins.addcredits.success",
               {
                 user: data.user,
@@ -30,7 +30,7 @@ module.exports = {
             users_credits[data.args[0].substr(1)] = {
               credits: data.args[1]
             };
-          
+
             client.sendMessage(Bot.translate("processors.user_info.plugins.addcredits.success",
               {
                 user: data.user,
@@ -38,10 +38,11 @@ module.exports = {
                 amount: data.args[1]
               }));
           }
-          if(!users_credits[data.args[0].substr(1)].history) {
-            users_credits[data.user].history = [];
+          if (!!users_credits[data.user] && users_credits[data.user].history) {
+            users_credits[data.user].history.push({ user: data.args[0], amount: data.args[1] });
+          } else {
+            users_credits[data.user].history = [{ user: data.args[0], amount: data.args[1] }];
           }
-          users_credits[data.user].history.push({ user: data.args[0], amount: data.args[1]});
 
         }
         else if (parseInt(data.args[1]) < 1) {
