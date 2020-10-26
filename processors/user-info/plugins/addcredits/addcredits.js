@@ -35,7 +35,7 @@ module.exports = {
               {
                 user: data.user,
                 receiver: data.args[0],
-                amount: data.args[1]
+                amount: parseInt(data.args[1])
               }));
           }
           if (!!users_credits[data.user] && users_credits[data.user].history) {
