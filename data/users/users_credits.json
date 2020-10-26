@@ -9,14 +9,14 @@
         "credits": 0
     },
     "Wasfun": {
-        "credits": 698,
-        "usage": 113
+        "credits": 719,
+        "usage": 165
     },
     "Darneo": {
         "credits": 1000
     },
     "sti89": {
-        "credits": 27,
+        "credits": 28,
         "usage": 0
     },
     "FullTrovlox": {
@@ -32,7 +32,8 @@
         "credits": 1
     },
     "wES123": {
-        "credits": 31
+        "credits": 36,
+        "usage": 1
     },
     "Darnea": {
         "credits": 302,
@@ -42,8 +43,14 @@
         "credits": 3
     },
     "Mush4sh_1": {
-        "credits": 662,
-        "usage": 34
+        "credits": 671,
+        "usage": 68,
+        "history": [
+            {
+                "user": "@billsdoto",
+                "amount": "10"
+            }
+        ]
     },
     "EdynD": {
         "credits": 11
@@ -66,8 +73,8 @@
         "usage": 1
     },
     "ZanyAce": {
-        "credits": 105,
-        "usage": 32
+        "credits": 124,
+        "usage": 69
     },
     "Noxius": {
         "credits": 55,
@@ -102,12 +109,12 @@
         "usage": 0
     },
     "GRUMO77": {
-        "credits": 54,
+        "credits": 60,
         "usage": 0
     },
     "nikzer0": {
-        "credits": 15,
-        "usage": 9
+        "credits": 18,
+        "usage": 18
     },
     "bebematador": {
         "credits": 25
@@ -116,7 +123,7 @@
         "credits": 1
     },
     "weoxs1": {
-        "credits": 15,
+        "credits": 16,
         "usage": 0
     },
     "hardgorealice": {
@@ -124,11 +131,12 @@
         "usage": 0
     },
     "PipilinChueco": {
-        "credits": 25,
-        "usage": 1
+        "credits": 20,
+        "usage": 2
     },
     "hefesss": {
-        "credits": 0
+        "credits": 0,
+        "usage": 1
     },
     "murd0c85": {
         "credits": 2
@@ -148,8 +156,8 @@
         "credits": 1
     },
     "Halco": {
-        "credits": 62,
-        "usage": 1
+        "credits": 57,
+        "usage": 2
     },
     "vehemencia": {
         "credits": 5
@@ -158,7 +166,7 @@
         "credits": 10
     },
     "Thetony89": {
-        "credits": 33,
+        "credits": 38,
         "usage": 0
     },
     "xxthezhurxx123": {
@@ -211,13 +219,15 @@
         "credits": 0
     },
     "Backsito": {
-        "credits": 28
+        "credits": 29,
+        "usage": 1
     },
     "juan234": {
         "credits": 0
     },
     "josearies23": {
-        "credits": 9
+        "credits": 4,
+        "usage": 1
     },
     "PingaOne": {
         "credits": 25
@@ -673,7 +683,8 @@
         "credits": 0
     },
     "El_Incognito": {
-        "credits": 0
+        "credits": 7,
+        "usage": 0
     },
     "Toallin_": {
         "credits": 0
@@ -721,8 +732,8 @@
         "credits": 89
     },
     "billsdoto": {
-        "credits": 10,
-        "usage": 7,
+        "credits": 0,
+        "usage": 11,
         "history": [
             {
                 "user": "@billsdoto",
@@ -785,8 +796,8 @@
         "credits": 6
     },
     "VodkaScc": {
-        "credits": 1987,
-        "usage": 3
+        "credits": 1982,
+        "usage": 4
     },
     "Quesokios": {
         "credits": 1,
@@ -797,8 +808,8 @@
         "usage": 0
     },
     "CuñadoDeMaria": {
-        "credits": 6,
-        "usage": 0
+        "credits": 1,
+        "usage": 2
     },
     "TeAmoDarnea": {
         "credits": 15,
@@ -817,7 +828,7 @@
         "usage": 0
     },
     "elsalvador": {
-        "credits": 6,
+        "credits": 8,
         "usage": 0
     },
     "Fernando2004": {
@@ -825,16 +836,55 @@
         "usage": 0
     },
     "payasitochupagampi": {
+        "credits": 2,
+        "usage": 1
+    },
+    "wardenclyffe": {
+        "credits": "205",
+        "usage": 0
+    },
+    "XxRuSoXx": {
+        "credits": 51106,
+        "usage": 1
+    },
+    "diverty": {
+        "credits": 2,
+        "usage": 0
+    },
+    "PrIsMaTiC": {
+        "credits": "51",
+        "usage": 0
+    },
+    "ShowMe": {
         "credits": 1,
         "usage": 0
     },
-    "wardenclyffe": {
-        "credits": "20",
-        "history": [
-            {
-                "user": "@wardenclyffe",
-                "amount": "20"
-            }
-        ]
+    "TioPayasito": {
+        "credits": 1,
+        "usage": 0
+    },
+    "ZaerosJr": {
+        "credits": 3,
+        "usage": 0
+    },
+    "mu-511-49": {
+        "credits": 51,
+        "usage": 0
+    },
+    "ElFirmeDeDarnea": {
+        "credits": 16,
+        "usage": 0
+    },
+    "C-pillin": {
+        "credits": 4,
+        "usage": 1
+    },
+    "MeLLegaAlPinchoLoco": {
+        "credits": 9,
+        "usage": 0
+    },
+    "BebeSalsero": {
+        "credits": 9,
+        "usage": 0
     }
 }
