@@ -109,7 +109,7 @@ function giveCredits(data, creditsToAdd = 1){
     }
     else {
       users_credits[data.user] = {
-        "credits": users_credits[data.user].credits + creditsToAdd,
+        "credits": parseInt(users_credits[data.user].credits) + creditsToAdd,
         "usage": (users_credits[data.user].usage || 0)
       }
     }
