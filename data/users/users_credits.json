@@ -48,7 +48,7 @@
         "history": [
             {
                 "user": "@billsdoto",
-                "amount": "10"
+                "amount": 10
             }
         ]
     },
@@ -733,13 +733,7 @@
     },
     "billsdoto": {
         "credits": 0,
-        "usage": 11,
-        "history": [
-            {
-                "user": "@billsdoto",
-                "amount": "25"
-            }
-        ]
+        "usage": 11
     },
     "freddy322": {
         "credits": 1
@@ -840,11 +834,11 @@
         "usage": 1
     },
     "wardenclyffe": {
-        "credits": "205",
+        "credits": 205,
         "usage": 0
     },
     "XxRuSoXx": {
-        "credits": 51106,
+        "credits": 15,
         "usage": 1
     },
     "diverty": {
@@ -852,7 +846,7 @@
         "usage": 0
     },
     "PrIsMaTiC": {
-        "credits": "51",
+        "credits": 51,
         "usage": 0
     },
     "ShowMe": {
