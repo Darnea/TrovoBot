@@ -20,7 +20,7 @@
         },
         "Rose": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey  @{{user}} :wink por la rosa :flower ",
             "httpMessage": "has cast a spell!",
@@ -28,7 +28,7 @@
         },
         "HYPE": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el HYPE :hype :hype  ",
             "httpMessage": "has cast a spell!",
@@ -36,7 +36,7 @@
         },
         "Bravo!": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el elixir :clap :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
@@ -44,7 +44,7 @@
         },
         "Cake": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el pastel :cake :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
@@ -52,7 +52,7 @@
         },
         "Winner": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el elixir :no.1 :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
@@ -60,7 +60,7 @@
         },
         "Shiny Unicorn": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el Ponny :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
@@ -68,7 +68,7 @@
         },
         "GGWP": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el :gg :w :p :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
@@ -76,7 +76,7 @@
         },
         "Cash Bang": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el elixir :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
@@ -84,7 +84,7 @@
         },
         "EZ": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el elixir :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
@@ -92,7 +92,7 @@
         },
         "Top1": {
             "scene": "-ALERTS-",
-            "source": "SPELL",
+            "source": "ELIXIR",
             "delay": 5,
             "message": "Gracias mi rey @{{user}} :wink por el Top01 :no.1 :cute :purpleheart :greenheart ",
             "httpMessage": "has cast a spell!",
