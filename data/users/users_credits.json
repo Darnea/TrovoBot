@@ -9,18 +9,8 @@
         "credits": 0
     },
     "Wasfun": {
-        "credits": 727,
-        "usage": 345,
-        "history": [
-            {
-                "user": "@Chavela_PR",
-                "amount": "10"
-            },
-            {
-                "user": "@censtury",
-                "amount": "10"
-            }
-        ]
+        "credits": 796,
+        "usage": 494
     },
     "Darneo": {
         "credits": 1005,
@@ -47,40 +37,36 @@
         "usage": 2
     },
     "Darnea": {
-        "credits": 314,
+        "credits": 336,
         "usage": 2
     },
     "HoOkii": {
         "credits": 3
     },
     "Mush4sh_1": {
-        "credits": 701,
-        "usage": 233,
+        "credits": 712,
+        "usage": 278,
         "history": [
             {
-                "user": "@billsdoto",
-                "amount": "25"
-            },
-            {
-                "user": "@censtury",
-                "amount": "25"
+                "user": "@Raffaello20",
+                "amount": "10"
             }
         ]
     },
     "EdynD": {
-        "credits": 6,
-        "usage": 3
+        "credits": 1,
+        "usage": 4
     },
     "mousedebolitaa": {
-        "credits": 6,
-        "usage": 8
+        "credits": 32,
+        "usage": 10
     },
     "dragon54xx": {
         "credits": 1
     },
     "gomiwi": {
-        "credits": 34,
-        "usage": 0
+        "credits": 29,
+        "usage": 1
     },
     "LeandroLG": {
         "credits": 19,
@@ -91,39 +77,15 @@
         "usage": 1
     },
     "ZanyAce": {
-        "credits": 644,
-        "usage": 223,
+        "credits": 666,
+        "usage": 274,
         "history": [
             {
-                "user": "@lzezel",
+                "user": "@nikzer0",
                 "amount": "25"
             },
             {
-                "user": "@GRUMO77",
-                "amount": "25"
-            },
-            {
-                "user": "@GRUMO77",
-                "amount": "25"
-            },
-            {
-                "user": "@GRUMO77",
-                "amount": "25"
-            },
-            {
-                "user": "@GRUMO77",
-                "amount": "25"
-            },
-            {
-                "user": "@GRUMO77",
-                "amount": "25"
-            },
-            {
-                "user": "@GRUMO77",
-                "amount": "25"
-            },
-            {
-                "user": "@GRUMO77",
+                "user": "@nikzer0",
                 "amount": "25"
             }
         ]
@@ -161,12 +123,12 @@
         "usage": 0
     },
     "GRUMO77": {
-        "credits": 72,
-        "usage": 34
+        "credits": 64,
+        "usage": 40
     },
     "nikzer0": {
-        "credits": 65,
-        "usage": 102
+        "credits": 37,
+        "usage": 127
     },
     "bebematador": {
         "credits": 45,
@@ -192,16 +154,16 @@
         "usage": 1
     },
     "murd0c85": {
-        "credits": 3,
+        "credits": 14,
         "usage": 0
     },
     "M4tt": {
-        "credits": 30,
-        "usage": 32
+        "credits": 42,
+        "usage": 48
     },
     "lzezel": {
-        "credits": 23,
-        "usage": 33
+        "credits": 34,
+        "usage": 34
     },
     "HaiseLR0": {
         "credits": 1
@@ -210,8 +172,8 @@
         "credits": 1
     },
     "Halco": {
-        "credits": 46,
-        "usage": 6
+        "credits": 52,
+        "usage": 7
     },
     "vehemencia": {
         "credits": 5
@@ -247,7 +209,8 @@
         "credits": 0
     },
     "MIGUELTV": {
-        "credits": 1
+        "credits": 2,
+        "usage": 0
     },
     "xDear_": {
         "credits": 0
@@ -398,8 +361,8 @@
         "credits": 20
     },
     "Zain_1992": {
-        "credits": 9,
-        "usage": 6
+        "credits": 0,
+        "usage": 8
     },
     "Menm4a": {
         "credits": 0
@@ -515,8 +478,8 @@
         "credits": 0
     },
     "dietoo": {
-        "credits": 490,
-        "usage": 2
+        "credits": 485,
+        "usage": 3
     },
     "Anime13": {
         "credits": 0
@@ -564,7 +527,7 @@
         "credits": 0
     },
     "paltito": {
-        "credits": 14,
+        "credits": 47,
         "usage": 1
     },
     "hinoko": {
@@ -806,7 +769,8 @@
         "credits": 12
     },
     "Vignory": {
-        "credits": 11
+        "credits": 33,
+        "usage": 0
     },
     "Ravenridge": {
         "credits": 11
@@ -865,12 +829,12 @@
         "usage": 0
     },
     "CuñadoDeMaria": {
-        "credits": 2,
+        "credits": 13,
         "usage": 2
     },
     "TeAmoDarnea": {
-        "credits": 15,
-        "usage": 0
+        "credits": 21,
+        "usage": 1
     },
     "VitaOn": {
         "credits": 24,
@@ -885,7 +849,7 @@
         "usage": 0
     },
     "elsalvador": {
-        "credits": 24,
+        "credits": 35,
         "usage": 0
     },
     "Fernando2004": {
@@ -929,8 +893,8 @@
         "usage": 0
     },
     "ElFirmeDeDarnea": {
-        "credits": 8,
-        "usage": 4
+        "credits": 9,
+        "usage": 6
     },
     "C-pillin": {
         "credits": 4,
@@ -969,8 +933,8 @@
         "usage": 0
     },
     "Antonio77777": {
-        "credits": 40,
-        "usage": 28
+        "credits": 5,
+        "usage": 35
     },
     "trovito_": {
         "credits": 4,
@@ -1009,11 +973,11 @@
         "usage": 0
     },
     "weejag09": {
-        "credits": 8,
+        "credits": 41,
         "usage": 0
     },
     "UwU_Pandi": {
-        "credits": 10,
+        "credits": 21,
         "usage": 0
     },
     "ollezhi": {
@@ -1045,8 +1009,8 @@
         "usage": 0
     },
     "grizzly691": {
-        "credits": 70,
-        "usage": 7
+        "credits": 76,
+        "usage": 8
     },
     "StupidLove": {
         "credits": 1,
@@ -1063,5 +1027,85 @@
     "censtury": {
         "credits": 18,
         "usage": 4
+    },
+    "Sr_PacmanZito_": {
+        "credits": 11,
+        "usage": 1
+    },
+    "yojanvc": {
+        "credits": 11,
+        "usage": 0
+    },
+    "Zutt": {
+        "credits": 0,
+        "usage": 1
+    },
+    "Hongihn": {
+        "credits": 17,
+        "usage": 1
+    },
+    "angeladerson2": {
+        "credits": 11,
+        "usage": 0
+    },
+    "SinFotoDePerfil": {
+        "credits": 38,
+        "usage": 8
+    },
+    "Shoot2Kill2": {
+        "credits": 33,
+        "usage": 0
+    },
+    "Nokyen": {
+        "credits": 33,
+        "usage": 0
+    },
+    "Vicuon": {
+        "credits": 44,
+        "usage": 0
+    },
+    "Nigromante": {
+        "credits": 33,
+        "usage": 0
+    },
+    "Zeygeu": {
+        "credits": 44,
+        "usage": 0
+    },
+    "Dillonsan": {
+        "credits": 33,
+        "usage": 0
+    },
+    "Natoal": {
+        "credits": 44,
+        "usage": 0
+    },
+    "Endurablebru": {
+        "credits": 33,
+        "usage": 0
+    },
+    "xxGSxCrazyybn25": {
+        "credits": 13,
+        "usage": 0
+    },
+    "Bakisor": {
+        "credits": 11,
+        "usage": 0
+    },
+    "Windlaws": {
+        "credits": 22,
+        "usage": 0
+    },
+    "Raffaello20": {
+        "credits": 0,
+        "usage": 2
+    },
+    "SorryNoSorry": {
+        "credits": 11,
+        "usage": 0
+    },
+    "Infuscatus": {
+        "credits": 11,
+        "usage": 0
     }
 }
