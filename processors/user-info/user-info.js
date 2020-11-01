@@ -85,7 +85,7 @@ module.exports = {
         "blackjackHand": users[data.user].blackjackHand,
         "blackjackDealerHand": users[data.user].blackjackDealerHand,
         "blackjackBet": users[data.user].blackjackBet,
-        "iconURL": (users[data.user].iconURL || data.iconURL)
+        "iconURL": data.iconURL
       }
     }
     
