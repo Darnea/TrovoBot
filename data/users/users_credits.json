@@ -10,7 +10,13 @@
     },
     "Wasfun": {
         "credits": 812,
-        "usage": 546
+        "usage": 546,
+        "history": {
+            "@Chavela_PR": "10",
+            "@censtury": "10",
+            "@DannyRodriguez": "5,10",
+            "@ShowMe": "15"
+        }
     },
     "Darneo": {
         "credits": 1027,
@@ -45,7 +51,15 @@
     },
     "Mush4sh_1": {
         "credits": 723,
-        "usage": 318
+        "usage": 318,
+        "history": {
+            "@nikzer0": "25,25,25,25,25",
+            "@Antonio77777": "25,25,25,25,10,20",
+            "@lzezel": "10",
+            "@Raffaello20": "10",
+            "@billsdoto": "25",
+            "@censtury": "25"
+        }
     },
     "EdynD": {
         "credits": 1,
@@ -73,12 +87,13 @@
     "ZanyAce": {
         "credits": 677,
         "usage": 293,
-        "history": [
-            {
-                "user": "@scuba23",
-                "amount": "25"
-            }
-        ]
+        "history": {
+            "@GRUMO77": "25,25,25,25,25,25,25",
+            "@lzezel": "10,25",
+            "@scuba23": "25",
+            "@nikzer0": "25,25,25",
+            "@Antonio77777": "10,20"
+        }
     },
     "Noxius": {
         "credits": 71,

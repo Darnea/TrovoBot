@@ -38,10 +38,13 @@ module.exports = {
                 amount: parseInt(data.args[1])
               }));
           }
-          if (!!users_credits[data.user] && users_credits[data.user].history) {
-            users_credits[data.user].history.push({ user: data.args[0], amount: data.args[1] });
+          if (users_credits[data.user].history == undefined) {
+            users_credits[data.user].history = {};
+          }
+          if (users_credits[data.user].history[data.args[0]] == undefined) {
+            users_credits[data.user].history[data.args[0]] = data.args[1];
           } else {
-            users_credits[data.user].history = [{ user: data.args[0], amount: data.args[1] }];
+            users_credits[data.user].history[data.args[0]] = users_credits[data.user].history[data.args[0]] + "," + data.args[1];
           }
 
         }
