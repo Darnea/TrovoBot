@@ -9,8 +9,11 @@
         "credits": 0
     },
     "Wasfun": {
-        "credits": 843,
-        "usage": 694
+        "credits": 848,
+        "usage": 731,
+        "history": {
+            "@JacKciiToh": "5,25,25"
+        }
     },
     "Darneo": {
         "credits": 1027,
@@ -34,7 +37,7 @@
         "credits": 1
     },
     "wES123": {
-        "credits": 41,
+        "credits": 52,
         "usage": 2
     },
     "Darnea": {
@@ -46,9 +49,9 @@
     },
     "Mush4sh_1": {
         "credits": 734,
-        "usage": 396,
+        "usage": 420,
         "history": {
-            "@nikzer0": "25,25,25,25,25,25,25",
+            "@nikzer0": "25,25,25,25,25,25,25,25",
             "@billsdoto": "25",
             "@Antonio77777": "25,25"
         }
@@ -78,18 +81,20 @@
     },
     "ZanyAce": {
         "credits": 677,
-        "usage": 399,
+        "usage": 443,
         "history": {
             "@GRUMO77": "25,25,25,25,25,25,25",
             "@lzezel": "10,25",
             "@scuba23": "25",
-            "@nikzer0": "25,25,25,25,25,25,25,25,25,25,25,25",
-            "@Antonio77777": "10,20",
+            "@nikzer0": "25,25,25,25,25,25,25,25,25,25,25,25,25",
+            "@Antonio77777": "10,20,25,25",
             "@sakuhammer": "10",
-            "@XxRuSoXx": "10,20",
+            "@XxRuSoXx": "10,20,25",
             "@billsdoto": "25,25,25",
             "@EdynD": "20",
-            "@Zain_1992": "15"
+            "@Zain_1992": "15",
+            "@Thetony89": "20",
+            "@Milumon": "25"
         }
     },
     "Noxius": {
@@ -125,12 +130,12 @@
         "usage": 0
     },
     "GRUMO77": {
-        "credits": 237,
-        "usage": 110
+        "credits": 167,
+        "usage": 124
     },
     "nikzer0": {
-        "credits": 145,
-        "usage": 212
+        "credits": 155,
+        "usage": 220
     },
     "bebematador": {
         "credits": 56,
@@ -160,8 +165,8 @@
         "usage": 0
     },
     "M4tt": {
-        "credits": 53,
-        "usage": 53
+        "credits": 64,
+        "usage": 68
     },
     "lzezel": {
         "credits": 34,
@@ -185,8 +190,8 @@
         "usage": 2
     },
     "Thetony89": {
-        "credits": 2,
-        "usage": 15
+        "credits": 23,
+        "usage": 17
     },
     "xxthezhurxx123": {
         "credits": 5
@@ -824,7 +829,7 @@
         "usage": 1
     },
     "VodkaScc": {
-        "credits": 2505,
+        "credits": 2516,
         "usage": 4
     },
     "Quesokios": {
@@ -872,8 +877,8 @@
         "usage": 0
     },
     "XxRuSoXx": {
-        "credits": 19,
-        "usage": 9
+        "credits": 5,
+        "usage": 17
     },
     "diverty": {
         "credits": 2,
@@ -940,8 +945,8 @@
         "usage": 0
     },
     "Antonio77777": {
-        "credits": 35,
-        "usage": 39
+        "credits": 5,
+        "usage": 55
     },
     "trovito_": {
         "credits": 4,
@@ -980,7 +985,7 @@
         "usage": 0
     },
     "weejag09": {
-        "credits": 41,
+        "credits": 52,
         "usage": 0
     },
     "UwU_Pandi": {
@@ -1016,8 +1021,8 @@
         "usage": 0
     },
     "grizzly691": {
-        "credits": 76,
-        "usage": 8
+        "credits": 66,
+        "usage": 10
     },
     "StupidLove": {
         "credits": 1,
@@ -1056,8 +1061,8 @@
         "usage": 0
     },
     "SinFotoDePerfil": {
-        "credits": 58,
-        "usage": 9
+        "credits": 39,
+        "usage": 23
     },
     "Shoot2Kill2": {
         "credits": 33,
@@ -1140,7 +1145,7 @@
         "usage": 2
     },
     "lKuroko": {
-        "credits": 3,
+        "credits": 4,
         "usage": 0
     },
     "korn21": {
@@ -1195,5 +1200,21 @@
     "Gabriel2004": {
         "credits": 11,
         "usage": 0
+    },
+    "YisusCrazy": {
+        "credits": 11,
+        "usage": 0
+    },
+    "treduard": {
+        "credits": 1,
+        "usage": 0
+    },
+    "Milumon": {
+        "credits": 48,
+        "usage": 2
+    },
+    "JacKciiToh": {
+        "credits": 56,
+        "usage": 2
     }
 }
